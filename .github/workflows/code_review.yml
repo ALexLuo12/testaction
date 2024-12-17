@@ -43,10 +43,7 @@ jobs:
       # Step 5: Run flake8 only on the updated files
       - name: Run Flake8 on updated files
         run: |
-          if [ -z "$FILES" ]; then
-            echo "No Python files to check."
-            exit 0
-          fi
+          echo $FILES
           flake8 $FILES --format=html --htmldir=flake8_reports
           echo "yes"
 
