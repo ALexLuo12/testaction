@@ -488,5 +488,3 @@ select SUM(is_submit) =count(distinct pillar) as flag from pdmr_submit where sta
 
         data = self.list(statement, params)
         return data
-
-        ret
