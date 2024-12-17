@@ -1,0 +1,56 @@
+name: Flake8 Analysis and Push Report
+
+on:
+  push:
+    branches:
+      - main  # 或你希望触发分析的分支
+  pull_request:
+    branches:
+      - main  # 在拉取请求时也进行分析
+
+jobs:
+  flake8-analysis:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Python environment
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.8'  # 选择合适的 Python 版本
+
+      # Step 3: Install flake8 and dependencies
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install flake8 flake8-html
+
+      # Step 4: Get the list of updated files in the commit or PR
+      - name: Get updated files
+        id: get_files
+        run: |
+          echo "Updated files:"
+          FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep -E '\.py$')
+          echo "FILES=$FILES" >> $GITHUB_ENV
+          echo "$FILES"
+
+      # Step 5: Run flake8 only on the updated files
+      - name: Run Flake8 on updated files
+        run: |
+          if [ -z "$FILES" ]; then
+            echo "No Python files to check."
+            exit 0
+          fi
+          flake8 $FILES --format=html --htmldir=flake8_reports
+
+      # Step 6: Commit and push the Flake8 report to gh-pages branch
+      - name: Push Flake8 report to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.GITHUB_TOKEN }}  # 使用 GitHub 自动生成的 token
+          publish_dir: ./flake8_reports  # 要推送的报告目录
+          publish_branch: gh-pages  # 推送到 gh-pages 分支
