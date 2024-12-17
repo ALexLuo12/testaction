@@ -43,7 +43,6 @@ jobs:
       # Step 5: Run flake8 only on the updated files
       - name: Run Flake8 on updated files
         run: |
-          echo $FILES
           flake8 $FILES --format=html --htmldir=flake8_reports
           echo "yes"
 
