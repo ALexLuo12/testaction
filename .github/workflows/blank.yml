@@ -1,37 +1,79 @@
-# This is a basic workflow to help you get started with Actions
+name: Flake8 Analysis and Push Report
 
-name: CI
-
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches-ignore:
+      - main  # 或你希望触发分析的分支
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  flake8-analysis:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
+      # Step 1: Checkout the code
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2 
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
+      # Step 2: Set up Python environment
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.7'  # 选择合适的 Python 版本
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      # Step 3: Install flake8 and dependencies
+      - name: Install dependencies
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
-          ls
+          python -m pip install --upgrade pip
+          pip install flake8 flake8-html
+
+      # Step 4: Get the list of updated files in the commit or PR
+      - name: Get updated files
+        id: get_files
+        run: |
+          echo "Updated files:"
+          FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep -E '\.py$')
+          echo "FILES=$FILES" >> $GITHUB_ENV
+          echo "$FILES"
+
+      # Step 5: Run flake8 only on the updated files
+      - name: Run Flake8 on updated files
+        run: |
+          flake8 $FILES --format=html --htmldir=flake8_reports --exit-zero
+          echo "yes"
+          echo "Flake8 report generated."
+
+      #  配置 Git 用户信息
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      # Step 6: Commit and push the Flake8 report to gh-pages branch
+      - name: Push Flake8 report to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.GITHUB_TOKEN }}  # 使用 GitHub 自动生成的 token
+          publish_dir: ./flake8_reports  # 要推送的报告目录
+          publish_branch: gh-pages  # 推送到 gh-pages 分支
+          destination_dir: flake8_reports/${{ github.ref_name }}
+          keep_files: true
+
+
+      # #推送生成的文件到指定仓库
+      # - name: Push files to target repository
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   run: |
+      #     # 添加生成的文件
+      #     git add flake8_reports
+          
+      #     # 提交更改（避免空提交报错）
+      #     git commit -m "Add flake8 analysis report [skip ci]" || echo "No changes to commit"
+
+      #     # 推送到指定仓库（例如 `target-repo`）
+      #     git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+      #     git push origin HEAD:main
