@@ -69,6 +69,7 @@ jobs:
           smtp-port: 587
           smtp-username: ${{ secrets.SMTP_USER }}
           smtp-password: ${{ secrets.SMTP_PASSWORD }}
+          from: ${{ secrets.SMTP_USER }}
           to: alex.luo@merkle.com
           subject: GitHub Action Notification
           body: |
