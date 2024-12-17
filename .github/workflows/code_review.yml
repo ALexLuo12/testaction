@@ -62,6 +62,8 @@ jobs:
           personal_token: ${{ secrets.GITHUB_TOKEN }}  # 使用 GitHub 自动生成的 token
           publish_dir: ./flake8_reports  # 要推送的报告目录
           publish_branch: gh-pages  # 推送到 gh-pages 分支
+          destination_dir: flake8_reports/latest 
+          keep_files: true
 
 
       # #推送生成的文件到指定仓库
