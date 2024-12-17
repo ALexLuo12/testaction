@@ -2,11 +2,8 @@ name: Flake8 Analysis and Push Report
 
 on:
   push:
-    branches:
+    branches-ignore::
       - main  # 或你希望触发分析的分支
-  pull_request:
-    branches:
-      - main  # 在拉取请求时也进行分析
 
 jobs:
   flake8-analysis:
@@ -62,7 +59,7 @@ jobs:
           personal_token: ${{ secrets.GITHUB_TOKEN }}  # 使用 GitHub 自动生成的 token
           publish_dir: ./flake8_reports  # 要推送的报告目录
           publish_branch: gh-pages  # 推送到 gh-pages 分支
-          destination_dir: flake8_reports/latest 
+          destination_dir: flake8_reports/${{ github.ref_name }}
           keep_files: true
 
 
