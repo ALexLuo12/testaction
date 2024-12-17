@@ -65,13 +65,12 @@ jobs:
           keep_files: true
 
       - name: Send Email
-        uses: dawidd6/action-send-mail@v3
+        uses: dawidd6/action-send-mail@v3   
         with:
-          smtp-server: smtp.exmail.qq.com
-          smtp-port: 465
+          server_address: smtp.exmail.qq.com
           server_port: 465
-          smtp-username: ${{ secrets.SMTP_USER }}
-          smtp-password: ${{ secrets.SMTP_PASSWORD }}
+          username: ${{ secrets.SMTP_USER }}
+          password: ${{ secrets.SMTP_PASSWORD }}
           from: ${{ secrets.SMTP_USER }}
           to: alex.luo@merkle.com
           subject: GitHub Action Notification
