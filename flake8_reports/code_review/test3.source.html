@@ -35,16 +35,7 @@
                class="code sev- "><tt><i>6</i> &nbsp;</tt>
             </div>
             <div id="l7"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E303
-                     </span>
-                     Too many blank lines (4)</li>
-               
-               </ul><tt><i>7</i> <span class="k">class</span> <span class="nc">PdmrRepository</span><span class="p">(</span><span class="n">Repository</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>7</i> <span class="k">class</span> <span class="nc">PdmrRepository</span><span class="p">(</span><span class="n">Repository</span><span class="p">):</span></tt>
             </div>
             <div id="l8"
                class="code sev- "><tt><i>8</i>     <span class="k">def</span> <span class="nf">get_pdmr_info</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">uid</span><span class="p">):</span></tt>
@@ -65,16 +56,7 @@
                class="code sev- "><tt><i>13</i> <span class="s1">                    select ka_name,tab_name from wz_pdmr_mapping</span></tt>
             </div>
             <div id="l14"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>14</i> <span class="s1">                                        where ka_manager_uid = :uid and type = 1 order by `index` </span></tt>
+               class="code sev- "><tt><i>14</i> <span class="s1">                                        where ka_manager_uid = :uid and type = 1 order by `index` </span></tt>
             </div>
             <div id="l15"
                class="code sev- "><tt><i>15</i> <span class="s1">                    &#39;&#39;&#39;</span></tt>
@@ -89,16 +71,7 @@
                class="code sev- "><tt><i>18</i> &nbsp;</tt>
             </div>
             <div id="l19"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E231
-                     </span>
-                     Missing whitespace after ','</li>
-               
-               </ul><tt><i>19</i>     <span class="k">def</span> <span class="nf">get_nat_info</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">uid</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>19</i>     <span class="k">def</span> <span class="nf">get_nat_info</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">uid</span><span class="p">):</span></tt>
             </div>
             <div id="l20"
                class="code sev- "><tt><i>20</i> &nbsp;</tt>
@@ -107,16 +80,7 @@
                class="code sev- "><tt><i>21</i> &nbsp;</tt>
             </div>
             <div id="l22"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E303
-                     </span>
-                     Too many blank lines (2)</li>
-               
-               </ul><tt><i>22</i>         <span class="n">params</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span></tt>
+               class="code sev- "><tt><i>22</i>         <span class="n">params</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span></tt>
             </div>
             <div id="l23"
                class="code sev- "><tt><i>23</i>         <span class="n">params</span><span class="p">[</span><span class="s1">&#39;uid&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">uid</span></tt>
@@ -143,16 +107,7 @@
                class="code sev- "><tt><i>30</i> &nbsp;</tt>
             </div>
             <div id="l31"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E303
-                     </span>
-                     Too many blank lines (2)</li>
-               
-               </ul><tt><i>31</i>     <span class="k">def</span> <span class="nf">get_rep_info</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">uid</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>31</i>     <span class="k">def</span> <span class="nf">get_rep_info</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">uid</span><span class="p">):</span></tt>
             </div>
             <div id="l32"
                class="code sev- "><tt><i>32</i>         <span class="n">params</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span></tt>
@@ -188,43 +143,16 @@
                class="code sev- "><tt><i>42</i> &nbsp;</tt>
             </div>
             <div id="l43"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>43</i>         <span class="n">statement</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;select  case when length(p_value-1)=1 and p_value &gt; 1 then concat(`P_year`,&#39;P&#39;,&#39;0&#39;,`P_Value`-1) </span></tt>
+               class="code sev- "><tt><i>43</i>         <span class="n">statement</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;select  case when length(p_value-1)=1 and p_value &gt; 1 then concat(`P_year`,&#39;P&#39;,&#39;0&#39;,`P_Value`-1) </span></tt>
             </div>
             <div id="l44"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>44</i> <span class="s1">     when length(p_value-1)=2 and p_value &gt; 1 then concat(`P_year`,&#39;P&#39;,`P_Value`-1) </span></tt>
+               class="code sev- "><tt><i>44</i> <span class="s1">     when length(p_value-1)=2 and p_value &gt; 1 then concat(`P_year`,&#39;P&#39;,`P_Value`-1) </span></tt>
             </div>
             <div id="l45"
                class="code sev- "><tt><i>45</i> <span class="s1">     when p_value = 1 then concat(`P_year`-1,&#39;P&#39;,&#39;13&#39;)</span></tt>
             </div>
             <div id="l46"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>46</i> <span class="s1">end as current_P  from ai_fcst.rc_calendar </span></tt>
+               class="code sev- "><tt><i>46</i> <span class="s1">end as current_P  from ai_fcst.rc_calendar </span></tt>
             </div>
             <div id="l47"
                class="code sev- "><tt><i>47</i> <span class="s1">                    where  `date` = date_format(now(),&#39;</span><span class="si">%%</span><span class="s1">Y-</span><span class="si">%%</span><span class="s1">m-</span><span class="si">%%</span><span class="s1">d&#39;);</span></tt>
@@ -239,16 +167,7 @@
                class="code sev- "><tt><i>50</i>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">list</span><span class="p">(</span><span class="n">statement</span><span class="p">,</span> <span class="n">params</span><span class="p">)</span></tt>
             </div>
             <div id="l51"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E265
-                     </span>
-                     Block comment should start with '# '</li>
-               
-               </ul><tt><i>51</i>         <span class="c1">#TODO</span></tt>
+               class="code sev- "><tt><i>51</i>         <span class="c1">#TODO</span></tt>
             </div>
             <div id="l52"
                class="code sev- "><tt><i>52</i>         <span class="c1"># return [{&#39;current_p&#39;:&#39;2024P09&#39;}]</span></tt>
@@ -269,76 +188,22 @@
                class="code sev- "><tt><i>57</i>         <span class="n">statement</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span></tt>
             </div>
             <div id="l58"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>58</i> <span class="s1">        select  </span></tt>
+               class="code sev- "><tt><i>58</i> <span class="s1">        select  </span></tt>
             </div>
             <div id="l59"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>59</i> <span class="s1">        case when  length(`P_Value`)=1  then concat(`P_year`,&#39;P&#39;,&#39;0&#39;,`P_Value`) </span></tt>
+               class="code sev- "><tt><i>59</i> <span class="s1">        case when  length(`P_Value`)=1  then concat(`P_year`,&#39;P&#39;,&#39;0&#39;,`P_Value`) </span></tt>
             </div>
             <div id="l60"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>60</i> <span class="s1">        else </span></tt>
+               class="code sev- "><tt><i>60</i> <span class="s1">        else </span></tt>
             </div>
             <div id="l61"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>61</i> <span class="s1">        concat(`P_year`,&#39;P&#39;,`P_Value`) </span></tt>
+               class="code sev- "><tt><i>61</i> <span class="s1">        concat(`P_year`,&#39;P&#39;,`P_Value`) </span></tt>
             </div>
             <div id="l62"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>62</i> <span class="s1">        end  as current_P </span></tt>
+               class="code sev- "><tt><i>62</i> <span class="s1">        end  as current_P </span></tt>
             </div>
             <div id="l63"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>63</i> <span class="s1">        from ai_fcst.rc_calendar </span></tt>
+               class="code sev- "><tt><i>63</i> <span class="s1">        from ai_fcst.rc_calendar </span></tt>
             </div>
             <div id="l64"
                class="code sev- "><tt><i>64</i> <span class="s1">                            where  `date` = date_format(now(),&#39;</span><span class="si">%%</span><span class="s1">Y-</span><span class="si">%%</span><span class="s1">m-</span><span class="si">%%</span><span class="s1">d&#39;);</span></tt>
@@ -359,34 +224,10 @@
                class="code sev- "><tt><i>69</i> &nbsp;</tt>
             </div>
             <div id="l70"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E303
-                     </span>
-                     Too many blank lines (2)</li>
-               
-               </ul><tt><i>70</i>         <span class="c1"># return [{&#39;current_p&#39;: &#39;2024P06&#39;}]</span></tt>
+               class="code sev- "><tt><i>70</i>         <span class="c1"># return [{&#39;current_p&#39;: &#39;2024P06&#39;}]</span></tt>
             </div>
             <div id="l71"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E301
-                     </span>
-                     Expected 1 blank line, found 0</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        E231
-                     </span>
-                     Missing whitespace after ','</li>
-               
-               </ul><tt><i>71</i>     <span class="k">def</span> <span class="nf">get_GSV_Forecast_table_name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">pillar</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>71</i>     <span class="k">def</span> <span class="nf">get_GSV_Forecast_table_name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">pillar</span><span class="p">):</span></tt>
             </div>
             <div id="l72"
                class="code sev- "><tt><i>72</i>         <span class="n">params</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span></tt>
@@ -395,16 +236,7 @@
                class="code sev- "><tt><i>73</i>         <span class="c1"># params[&#39;pillar&#39;]=pillar</span></tt>
             </div>
             <div id="l74"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>74</i>         <span class="n">statement</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;select file_name from pdmr_file_ctr </span></tt>
+               class="code sev- "><tt><i>74</i>         <span class="n">statement</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;select file_name from pdmr_file_ctr </span></tt>
             </div>
             <div id="l75"
                class="code sev- "><tt><i>75</i> <span class="s1">                        where meta_name = &#39;GSV Forecast table&#39;</span></tt>
@@ -413,16 +245,7 @@
                class="code sev- "><tt><i>76</i> <span class="s1">                        order by insert_dt  desc</span></tt>
             </div>
             <div id="l77"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>77</i> <span class="s1">                        limit 1 </span></tt>
+               class="code sev- "><tt><i>77</i> <span class="s1">                        limit 1 </span></tt>
             </div>
             <div id="l78"
                class="code sev- "><tt><i>78</i> <span class="s1">                    &#39;&#39;&#39;</span></tt>
@@ -455,43 +278,16 @@
                class="code sev- "><tt><i>87</i> &nbsp;</tt>
             </div>
             <div id="l88"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E231
-                     </span>
-                     Missing whitespace after ',' (in 2 places)</li>
-               
-               </ul><tt><i>88</i>     <span class="k">def</span> <span class="nf">pillar_lz_to_iz</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">pillar</span><span class="p">,</span><span class="n">current_P</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>88</i>     <span class="k">def</span> <span class="nf">pillar_lz_to_iz</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">pillar</span><span class="p">,</span><span class="n">current_P</span><span class="p">):</span></tt>
             </div>
             <div id="l89"
                class="code sev- "><tt><i>89</i>         <span class="n">params</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span></tt>
             </div>
             <div id="l90"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E225
-                     </span>
-                     Missing whitespace around operator</li>
-               
-               </ul><tt><i>90</i>         <span class="n">params</span><span class="p">[</span><span class="s1">&#39;Pillar&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">pillar</span></tt>
+               class="code sev- "><tt><i>90</i>         <span class="n">params</span><span class="p">[</span><span class="s1">&#39;Pillar&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">pillar</span></tt>
             </div>
             <div id="l91"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E225
-                     </span>
-                     Missing whitespace around operator</li>
-               
-               </ul><tt><i>91</i>         <span class="n">params</span><span class="p">[</span><span class="s1">&#39;statics_period&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">current_P</span></tt>
+               class="code sev- "><tt><i>91</i>         <span class="n">params</span><span class="p">[</span><span class="s1">&#39;statics_period&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">current_P</span></tt>
             </div>
             <div id="l92"
                class="code sev- "><tt><i>92</i> &nbsp;</tt>
@@ -500,16 +296,7 @@
                class="code sev- "><tt><i>93</i>         <span class="n">first_sql</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span></tt>
             </div>
             <div id="l94"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>94</i> <span class="s2">        delete from iz_pdmr_adjusted_target </span></tt>
+               class="code sev- "><tt><i>94</i> <span class="s2">        delete from iz_pdmr_adjusted_target </span></tt>
             </div>
             <div id="l95"
                class="code sev- "><tt><i>95</i> <span class="s2">        where Pillar = :Pillar and statics_period = :statics_period;</span></tt>
@@ -563,16 +350,7 @@
                class="code sev- "><tt><i>111</i> <span class="s1">            statics_period</span></tt>
             </div>
             <div id="l112"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>112</i> <span class="s1">            from </span></tt>
+               class="code sev- "><tt><i>112</i> <span class="s1">            from </span></tt>
             </div>
             <div id="l113"
                class="code sev- "><tt><i>113</i> <span class="s1">            (</span></tt>
@@ -620,67 +398,22 @@
                class="code sev- "><tt><i>127</i> <span class="s1">            case when b.price = 0 then 0 else</span></tt>
             </div>
             <div id="l128"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>128</i> <span class="s1">            a.gsv/b.price end as volume </span></tt>
+               class="code sev- "><tt><i>128</i> <span class="s1">            a.gsv/b.price end as volume </span></tt>
             </div>
             <div id="l129"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>129</i> <span class="s1">            from lz_pdmr_adjusted_target a </span></tt>
+               class="code sev- "><tt><i>129</i> <span class="s1">            from lz_pdmr_adjusted_target a </span></tt>
             </div>
             <div id="l130"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>130</i> <span class="s1">            left join iz_pdmr_product_price b </span></tt>
+               class="code sev- "><tt><i>130</i> <span class="s1">            left join iz_pdmr_product_price b </span></tt>
             </div>
             <div id="l131"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>131</i> <span class="s1">            on a.customer = b.customer and a.category_code = b.category_code  and a.`year` = b.`Year` </span></tt>
+               class="code sev- "><tt><i>131</i> <span class="s1">            on a.customer = b.customer and a.category_code = b.category_code  and a.`year` = b.`Year` </span></tt>
             </div>
             <div id="l132"
                class="code sev- "><tt><i>132</i> <span class="s1">            and a.period = b.period</span></tt>
             </div>
             <div id="l133"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>133</i> <span class="s1">            where   a.product_type in (&#39;sellable&#39;,&#39;fg&#39;)  </span></tt>
+               class="code sev- "><tt><i>133</i> <span class="s1">            where   a.product_type in (&#39;sellable&#39;,&#39;fg&#39;)  </span></tt>
             </div>
             <div id="l134"
                class="code sev- "><tt><i>134</i> <span class="s1">            and a.Pillar = :Pillar</span></tt>
@@ -698,16 +431,7 @@
                class="code sev- "><tt><i>138</i> <span class="s1">            union all</span></tt>
             </div>
             <div id="l139"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>139</i> <span class="s1">            select </span></tt>
+               class="code sev- "><tt><i>139</i> <span class="s1">            select </span></tt>
             </div>
             <div id="l140"
                class="code sev- "><tt><i>140</i> <span class="s1">            a.Pillar,</span></tt>
@@ -749,16 +473,7 @@
                class="code sev- "><tt><i>152</i> <span class="s1">            a.volume</span></tt>
             </div>
             <div id="l153"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>153</i> <span class="s1">            from lz_pdmr_adjusted_target a </span></tt>
+               class="code sev- "><tt><i>153</i> <span class="s1">            from lz_pdmr_adjusted_target a </span></tt>
             </div>
             <div id="l154"
                class="code sev- "><tt><i>154</i> <span class="s1">            where   a.product_type = &#39;ancp&#39;</span></tt>
@@ -782,28 +497,7 @@
                class="code sev- "><tt><i>160</i> <span class="s1">            )</span></tt>
             </div>
             <div id="l161"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W191
-                     </span>
-                     Indentation contains tabs</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        E101
-                     </span>
-                     Indentation contains mixed spaces and tabs</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        W293
-                     </span>
-                     Blank line contains whitespace</li>
-               
-               </ul><tt><i>161</i> <span class="s1">		        </span></tt>
+               class="code sev- "><tt><i>161</i> <span class="s1">		        </span></tt>
             </div>
             <div id="l162"
                class="code sev- "><tt><i>162</i> <span class="s1">        &#39;&#39;&#39;</span></tt>
@@ -812,28 +506,10 @@
                class="code sev- "><tt><i>163</i> &nbsp;</tt>
             </div>
             <div id="l164"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E231
-                     </span>
-                     Missing whitespace after ','</li>
-               
-               </ul><tt><i>164</i>         <span class="bp">self</span><span class="o">.</span><span class="n">insert_or_update</span><span class="p">(</span><span class="n">first_sql</span><span class="p">,</span><span class="n">params</span><span class="p">)</span></tt>
+               class="code sev- "><tt><i>164</i>         <span class="bp">self</span><span class="o">.</span><span class="n">insert_or_update</span><span class="p">(</span><span class="n">first_sql</span><span class="p">,</span><span class="n">params</span><span class="p">)</span></tt>
             </div>
             <div id="l165"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E231
-                     </span>
-                     Missing whitespace after ','</li>
-               
-               </ul><tt><i>165</i>         <span class="bp">self</span><span class="o">.</span><span class="n">insert_or_update</span><span class="p">(</span><span class="n">second_sql</span><span class="p">,</span><span class="n">params</span><span class="p">)</span></tt>
+               class="code sev- "><tt><i>165</i>         <span class="bp">self</span><span class="o">.</span><span class="n">insert_or_update</span><span class="p">(</span><span class="n">second_sql</span><span class="p">,</span><span class="n">params</span><span class="p">)</span></tt>
             </div>
             <div id="l166"
                class="code sev- "><tt><i>166</i> &nbsp;</tt>
@@ -845,58 +521,13 @@
                class="code sev- "><tt><i>168</i>             <span class="n">sql</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span></tt>
             </div>
             <div id="l169"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>169</i> <span class="s1">                insert into iz_pdmr_adjusted_target </span></tt>
+               class="code sev- "><tt><i>169</i> <span class="s1">                insert into iz_pdmr_adjusted_target </span></tt>
             </div>
             <div id="l170"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W191
-                     </span>
-                     Indentation contains tabs</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        E101
-                     </span>
-                     Indentation contains mixed spaces and tabs</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        W293
-                     </span>
-                     Blank line contains whitespace</li>
-               
-               </ul><tt><i>170</i> <span class="s1">	</span></tt>
+               class="code sev- "><tt><i>170</i> <span class="s1">	</span></tt>
             </div>
             <div id="l171"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W191
-                     </span>
-                     Indentation contains tabs</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        E101
-                     </span>
-                     Indentation contains mixed spaces and tabs</li>
-               
-               </ul><tt><i>171</i> <span class="s1">		      select Pillar,</span></tt>
+               class="code sev- "><tt><i>171</i> <span class="s1">		      select Pillar,</span></tt>
             </div>
             <div id="l172"
                class="code sev- "><tt><i>172</i> <span class="s1">            customer,</span></tt>
@@ -935,16 +566,7 @@
                class="code sev- "><tt><i>183</i> <span class="s1">            statics_period from (</span></tt>
             </div>
             <div id="l184"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>184</i> <span class="s1">            select </span></tt>
+               class="code sev- "><tt><i>184</i> <span class="s1">            select </span></tt>
             </div>
             <div id="l185"
                class="code sev- "><tt><i>185</i> <span class="s1">            a.Pillar,</span></tt>
@@ -989,139 +611,31 @@
                class="code sev- "><tt><i>198</i> <span class="s1">            a.gsv/b.price*pcp.percent end as volume</span></tt>
             </div>
             <div id="l199"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>199</i> <span class="s1">            from lz_pdmr_adjusted_target a </span></tt>
+               class="code sev- "><tt><i>199</i> <span class="s1">            from lz_pdmr_adjusted_target a </span></tt>
             </div>
             <div id="l200"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>200</i> <span class="s1">            left join iz_pdmr_product_price b </span></tt>
+               class="code sev- "><tt><i>200</i> <span class="s1">            left join iz_pdmr_product_price b </span></tt>
             </div>
             <div id="l201"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W191
-                     </span>
-                     Indentation contains tabs</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        E101
-                     </span>
-                     Indentation contains mixed spaces and tabs</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>201</i> <span class="s1">		        on a.customer = b.customer and a.category_code = b.category_code  and a.`year` = b.`Year` </span></tt>
+               class="code sev- "><tt><i>201</i> <span class="s1">		        on a.customer = b.customer and a.category_code = b.category_code  and a.`year` = b.`Year` </span></tt>
             </div>
             <div id="l202"
                class="code sev- "><tt><i>202</i> <span class="s1">            and a.period = b.period</span></tt>
             </div>
             <div id="l203"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>203</i> <span class="s1">            left join pdmr_customer_percent pcp </span></tt>
+               class="code sev- "><tt><i>203</i> <span class="s1">            left join pdmr_customer_percent pcp </span></tt>
             </div>
             <div id="l204"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E501
-                     </span>
-                     Line too long (146 > 120 characters)</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>204</i> <span class="s1">            on a.customer = pcp.customer and  concat(a.period,&#39;Y&#39;, SUBSTRING(a.`year`,3,2))  = pcp.period and a.statics_period = pcp.static_period </span></tt>
+               class="code sev- "><tt><i>204</i> <span class="s1">            on a.customer = pcp.customer and  concat(a.period,&#39;Y&#39;, SUBSTRING(a.`year`,3,2))  = pcp.period and a.statics_period = pcp.static_period </span></tt>
             </div>
             <div id="l205"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W191
-                     </span>
-                     Indentation contains tabs</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        E101
-                     </span>
-                     Indentation contains mixed spaces and tabs</li>
-               
-               </ul><tt><i>205</i> <span class="s1">		     where  a.customer = &#39;VET_EVET&#39; and a.statics_period = :statics_period and a.Pvalue_Pyear&gt;a.statics_period</span></tt>
+               class="code sev- "><tt><i>205</i> <span class="s1">		     where  a.customer = &#39;VET_EVET&#39; and a.statics_period = :statics_period and a.Pvalue_Pyear&gt;a.statics_period</span></tt>
             </div>
             <div id="l206"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W191
-                     </span>
-                     Indentation contains tabs</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        E101
-                     </span>
-                     Indentation contains mixed spaces and tabs</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>206</i> <span class="s1">		    union all     </span></tt>
+               class="code sev- "><tt><i>206</i> <span class="s1">		    union all     </span></tt>
             </div>
             <div id="l207"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>207</i> <span class="s1">            select </span></tt>
+               class="code sev- "><tt><i>207</i> <span class="s1">            select </span></tt>
             </div>
             <div id="l208"
                class="code sev- "><tt><i>208</i> <span class="s1">            a.Pillar,</span></tt>
@@ -1166,103 +680,25 @@
                class="code sev- "><tt><i>221</i> <span class="s1">            a.gsv/b.price*(1-pcp.percent) end as volume</span></tt>
             </div>
             <div id="l222"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>222</i> <span class="s1">            from lz_pdmr_adjusted_target a </span></tt>
+               class="code sev- "><tt><i>222</i> <span class="s1">            from lz_pdmr_adjusted_target a </span></tt>
             </div>
             <div id="l223"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>223</i> <span class="s1">            left join iz_pdmr_product_price b </span></tt>
+               class="code sev- "><tt><i>223</i> <span class="s1">            left join iz_pdmr_product_price b </span></tt>
             </div>
             <div id="l224"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W191
-                     </span>
-                     Indentation contains tabs</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        E101
-                     </span>
-                     Indentation contains mixed spaces and tabs</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>224</i> <span class="s1">		        on a.customer = b.customer and a.category_code = b.category_code  and a.`year` = b.`Year` </span></tt>
+               class="code sev- "><tt><i>224</i> <span class="s1">		        on a.customer = b.customer and a.category_code = b.category_code  and a.`year` = b.`Year` </span></tt>
             </div>
             <div id="l225"
                class="code sev- "><tt><i>225</i> <span class="s1">            and a.period = b.period</span></tt>
             </div>
             <div id="l226"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>226</i> <span class="s1">            left join pdmr_customer_percent pcp </span></tt>
+               class="code sev- "><tt><i>226</i> <span class="s1">            left join pdmr_customer_percent pcp </span></tt>
             </div>
             <div id="l227"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E501
-                     </span>
-                     Line too long (146 > 120 characters)</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>227</i> <span class="s1">            on a.customer = pcp.customer and  concat(a.period,&#39;Y&#39;, SUBSTRING(a.`year`,3,2))  = pcp.period and a.statics_period = pcp.static_period </span></tt>
+               class="code sev- "><tt><i>227</i> <span class="s1">            on a.customer = pcp.customer and  concat(a.period,&#39;Y&#39;, SUBSTRING(a.`year`,3,2))  = pcp.period and a.statics_period = pcp.static_period </span></tt>
             </div>
             <div id="l228"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W191
-                     </span>
-                     Indentation contains tabs</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        E101
-                     </span>
-                     Indentation contains mixed spaces and tabs</li>
-               
-               </ul><tt><i>228</i> <span class="s1">		     where  a.customer = &#39;VET_EVET&#39; and a.statics_period = :statics_period and a.Pvalue_Pyear&gt;a.statics_period)a</span></tt>
+               class="code sev- "><tt><i>228</i> <span class="s1">		     where  a.customer = &#39;VET_EVET&#39; and a.statics_period = :statics_period and a.Pvalue_Pyear&gt;a.statics_period)a</span></tt>
             </div>
             <div id="l229"
                class="code sev- "><tt><i>229</i> <span class="s1">            &#39;&#39;&#39;</span></tt>
@@ -1271,16 +707,7 @@
                class="code sev- "><tt><i>230</i> &nbsp;</tt>
             </div>
             <div id="l231"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E231
-                     </span>
-                     Missing whitespace after ':'</li>
-               
-               </ul><tt><i>231</i>             <span class="bp">self</span><span class="o">.</span><span class="n">insert_or_update</span><span class="p">(</span><span class="n">sql</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;statics_period&#39;</span><span class="p">:</span><span class="n">current_P</span><span class="p">})</span></tt>
+               class="code sev- "><tt><i>231</i>             <span class="bp">self</span><span class="o">.</span><span class="n">insert_or_update</span><span class="p">(</span><span class="n">sql</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;statics_period&#39;</span><span class="p">:</span><span class="n">current_P</span><span class="p">})</span></tt>
             </div>
             <div id="l232"
                class="code sev- "><tt><i>232</i> &nbsp;</tt>
@@ -1289,16 +716,7 @@
                class="code sev- "><tt><i>233</i> &nbsp;</tt>
             </div>
             <div id="l234"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E303
-                     </span>
-                     Too many blank lines (2)</li>
-               
-               </ul><tt><i>234</i>     <span class="k">def</span> <span class="nf">get_genery_file_info</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>234</i>     <span class="k">def</span> <span class="nf">get_genery_file_info</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
             </div>
             <div id="l235"
                class="code sev- "><tt><i>235</i>         <span class="n">params</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span></tt>
@@ -1307,16 +725,7 @@
                class="code sev- "><tt><i>236</i>         <span class="n">statement</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span></tt>
             </div>
             <div id="l237"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>237</i> <span class="s1">         select pillar ,p_year ,p_period,p_file from pdmr_genery_file </span></tt>
+               class="code sev- "><tt><i>237</i> <span class="s1">         select pillar ,p_year ,p_period,p_file from pdmr_genery_file </span></tt>
             </div>
             <div id="l238"
                class="code sev- "><tt><i>238</i> <span class="s1">         &#39;&#39;&#39;</span></tt>
@@ -1331,16 +740,7 @@
                class="code sev- "><tt><i>241</i> &nbsp;</tt>
             </div>
             <div id="l242"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E231
-                     </span>
-                     Missing whitespace after ','</li>
-               
-               </ul><tt><i>242</i>     <span class="k">def</span> <span class="nf">aggregate_data</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">data</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>242</i>     <span class="k">def</span> <span class="nf">aggregate_data</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">data</span><span class="p">):</span></tt>
             </div>
             <div id="l243"
                class="code sev- "><tt><i>243</i>         <span class="n">result</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="n">defaultdict</span><span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)))</span></tt>
@@ -1379,16 +779,7 @@
                class="code sev- "><tt><i>254</i> &nbsp;</tt>
             </div>
             <div id="l255"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E231
-                     </span>
-                     Missing whitespace after ','</li>
-               
-               </ul><tt><i>255</i>     <span class="k">def</span> <span class="nf">update_sb</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">pillar</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>255</i>     <span class="k">def</span> <span class="nf">update_sb</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">pillar</span><span class="p">):</span></tt>
             </div>
             <div id="l256"
                class="code sev- "><tt><i>256</i>         <span class="n">P</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_P_info</span><span class="p">()[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;current_p&#39;</span><span class="p">]</span></tt>
@@ -1421,28 +812,10 @@
                class="code sev- "><tt><i>265</i> &nbsp;</tt>
             </div>
             <div id="l266"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E231
-                     </span>
-                     Missing whitespace after ','</li>
-               
-               </ul><tt><i>266</i>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">insert_or_update</span><span class="p">(</span><span class="n">statement</span><span class="p">,</span><span class="n">params</span><span class="p">)</span></tt>
+               class="code sev- "><tt><i>266</i>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">insert_or_update</span><span class="p">(</span><span class="n">statement</span><span class="p">,</span><span class="n">params</span><span class="p">)</span></tt>
             </div>
             <div id="l267"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E301
-                     </span>
-                     Expected 1 blank line, found 0</li>
-               
-               </ul><tt><i>267</i>     <span class="k">def</span> <span class="nf">get_pdmr_genery_log</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>267</i>     <span class="k">def</span> <span class="nf">get_pdmr_genery_log</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
             </div>
             <div id="l268"
                class="code sev- "><tt><i>268</i>         <span class="n">P</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_P_info</span><span class="p">()[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;current_p&#39;</span><span class="p">]</span></tt>
@@ -1457,16 +830,7 @@
                class="code sev- "><tt><i>271</i>         <span class="c1"># statement = &#39;&#39;&#39;</span></tt>
             </div>
             <div id="l272"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E501
-                     </span>
-                     Line too long (131 > 120 characters)</li>
-               
-               </ul><tt><i>272</i>         <span class="c1"># select ka,&#39;PDMR Generate：Completed&#39; as message,create_dt  as `date` from user_action_log where `action` = &#39;PDMR Generate&#39;</span></tt>
+               class="code sev- "><tt><i>272</i>         <span class="c1"># select ka,&#39;PDMR Generate：Completed&#39; as message,create_dt  as `date` from user_action_log where `action` = &#39;PDMR Generate&#39;</span></tt>
             </div>
             <div id="l273"
                class="code sev- "><tt><i>273</i>         <span class="c1"># &#39;&#39;&#39;</span></tt>
@@ -1478,31 +842,13 @@
                class="code sev- "><tt><i>275</i> <span class="s1">        select * from (</span></tt>
             </div>
             <div id="l276"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E501
-                     </span>
-                     Line too long (137 > 120 characters)</li>
-               
-               </ul><tt><i>276</i> <span class="s1">select pillar as `ka`,status as message,insert_dt  as `date`,uid,status_code  from pdmr_running_log where  static_period = :static_period</span></tt>
+               class="code sev- "><tt><i>276</i> <span class="s1">select pillar as `ka`,status as message,insert_dt  as `date`,uid,status_code  from pdmr_running_log where  static_period = :static_period</span></tt>
             </div>
             <div id="l277"
                class="code sev- "><tt><i>277</i> <span class="s1">union all</span></tt>
             </div>
             <div id="l278"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E501
-                     </span>
-                     Line too long (141 > 120 characters)</li>
-               
-               </ul><tt><i>278</i> <span class="s1">select ka,&#39;submit&#39; as message,create_dt  as `date`,uid ,&#39;&#39; as status_code from user_action_log where `action` = &#39;submit&#39;  and module = &#39;pdmr&#39;</span></tt>
+               class="code sev- "><tt><i>278</i> <span class="s1">select ka,&#39;submit&#39; as message,create_dt  as `date`,uid ,&#39;&#39; as status_code from user_action_log where `action` = &#39;submit&#39;  and module = &#39;pdmr&#39;</span></tt>
             </div>
             <div id="l279"
                class="code sev- "><tt><i>279</i> <span class="s1">) a  order by date</span></tt>
@@ -1511,22 +857,7 @@
                class="code sev- "><tt><i>280</i> <span class="s1">        &#39;&#39;&#39;</span></tt>
             </div>
             <div id="l281"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E222
-                     </span>
-                     Multiple spaces after operator</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        E231
-                     </span>
-                     Missing whitespace after ','</li>
-               
-               </ul><tt><i>281</i>         <span class="n">data</span> <span class="o">=</span>  <span class="bp">self</span><span class="o">.</span><span class="n">list</span><span class="p">(</span><span class="n">statement</span><span class="p">,</span><span class="n">params</span><span class="p">)</span></tt>
+               class="code sev- "><tt><i>281</i>         <span class="n">data</span> <span class="o">=</span>  <span class="bp">self</span><span class="o">.</span><span class="n">list</span><span class="p">(</span><span class="n">statement</span><span class="p">,</span><span class="n">params</span><span class="p">)</span></tt>
             </div>
             <div id="l282"
                class="code sev- "><tt><i>282</i>         <span class="n">result</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span></tt>
@@ -1550,22 +881,7 @@
                class="code sev- "><tt><i>288</i>             <span class="n">status_code</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="s1">&#39;status_code&#39;</span><span class="p">]</span></tt>
             </div>
             <div id="l289"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E231
-                     </span>
-                     Missing whitespace after ',' (in 3 places)</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        E231
-                     </span>
-                     Missing whitespace after ':' (in 3 places)</li>
-               
-               </ul><tt><i>289</i>             <span class="n">result</span><span class="p">[</span><span class="n">ka</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s1">&#39;message&#39;</span><span class="p">:</span> <span class="n">message</span><span class="p">,</span> <span class="s1">&#39;date&#39;</span><span class="p">:</span> <span class="n">date</span><span class="p">,</span><span class="s1">&#39;pillar&#39;</span><span class="p">:</span><span class="n">ka</span><span class="p">,</span><span class="s1">&#39;uid&#39;</span><span class="p">:</span><span class="n">uid</span><span class="p">,</span><span class="s1">&#39;status_code&#39;</span><span class="p">:</span><span class="n">status_code</span><span class="p">})</span></tt>
+               class="code sev- "><tt><i>289</i>             <span class="n">result</span><span class="p">[</span><span class="n">ka</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s1">&#39;message&#39;</span><span class="p">:</span> <span class="n">message</span><span class="p">,</span> <span class="s1">&#39;date&#39;</span><span class="p">:</span> <span class="n">date</span><span class="p">,</span><span class="s1">&#39;pillar&#39;</span><span class="p">:</span><span class="n">ka</span><span class="p">,</span><span class="s1">&#39;uid&#39;</span><span class="p">:</span><span class="n">uid</span><span class="p">,</span><span class="s1">&#39;status_code&#39;</span><span class="p">:</span><span class="n">status_code</span><span class="p">})</span></tt>
             </div>
             <div id="l290"
                class="code sev- "><tt><i>290</i>         <span class="n">result</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">result</span><span class="p">)</span></tt>
@@ -1577,16 +893,7 @@
                class="code sev- "><tt><i>292</i> &nbsp;</tt>
             </div>
             <div id="l293"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E231
-                     </span>
-                     Missing whitespace after ','</li>
-               
-               </ul><tt><i>293</i>     <span class="k">def</span> <span class="nf">pdmr_check</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">pillar</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>293</i>     <span class="k">def</span> <span class="nf">pdmr_check</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">pillar</span><span class="p">):</span></tt>
             </div>
             <div id="l294"
                class="code sev- "><tt><i>294</i>         <span class="n">P</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_P_info</span><span class="p">()[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;current_p&#39;</span><span class="p">]</span></tt>
@@ -1598,79 +905,28 @@
                class="code sev- "><tt><i>296</i>             <span class="n">statement</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;&#39;&#39;</span></tt>
             </div>
             <div id="l297"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W293
-                     </span>
-                     Blank line contains whitespace</li>
-               
-               </ul><tt><i>297</i> <span class="s1">            </span></tt>
+               class="code sev- "><tt><i>297</i> <span class="s1">            </span></tt>
             </div>
             <div id="l298"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E501
-                     </span>
-                     Line too long (147 > 120 characters)</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>298</i> <span class="s1">select SUM(is_submit) =count(distinct pillar) as flag from pdmr_submit where static_period = &#39;</span><span class="si">{</span><span class="n">P</span><span class="si">}</span><span class="s1">&#39;  and (pillar like &#39;OMNI%%&#39; or pillar = &#39;DOUYIN&#39;)  </span></tt>
+               class="code sev- "><tt><i>298</i> <span class="s1">select SUM(is_submit) =count(distinct pillar) as flag from pdmr_submit where static_period = &#39;</span><span class="si">{</span><span class="n">P</span><span class="si">}</span><span class="s1">&#39;  and (pillar like &#39;OMNI%%&#39; or pillar = &#39;DOUYIN&#39;)  </span></tt>
             </div>
             <div id="l299"
                class="code sev- "><tt><i>299</i> <span class="s1">                    &#39;&#39;&#39;</span></tt>
             </div>
             <div id="l300"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E203
-                     </span>
-                     Whitespace before ':'</li>
-               
-               </ul><tt><i>300</i>         <span class="k">else</span> <span class="p">:</span></tt>
+               class="code sev- "><tt><i>300</i>         <span class="k">else</span> <span class="p">:</span></tt>
             </div>
             <div id="l301"
                class="code sev- "><tt><i>301</i>             <span class="n">statement</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;&#39;&#39;</span></tt>
             </div>
             <div id="l302"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>302</i> <span class="s1">                select SUM(is_submit) = count(distinct pillar) as flag from pdmr_submit where static_period = &#39;</span><span class="si">{</span><span class="n">P</span><span class="si">}</span><span class="s1">&#39;   </span></tt>
+               class="code sev- "><tt><i>302</i> <span class="s1">                select SUM(is_submit) = count(distinct pillar) as flag from pdmr_submit where static_period = &#39;</span><span class="si">{</span><span class="n">P</span><span class="si">}</span><span class="s1">&#39;   </span></tt>
             </div>
             <div id="l303"
                class="code sev- "><tt><i>303</i> <span class="s1">                    &#39;&#39;&#39;</span></tt>
             </div>
             <div id="l304"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E271
-                     </span>
-                     Multiple spaces after keyword</li>
-               
-               </ul><tt><i>304</i>         <span class="k">return</span>  <span class="bp">self</span><span class="o">.</span><span class="n">list</span><span class="p">(</span><span class="n">statement</span><span class="p">,</span> <span class="nb">dict</span><span class="p">())</span></tt>
+               class="code sev- "><tt><i>304</i>         <span class="k">return</span>  <span class="bp">self</span><span class="o">.</span><span class="n">list</span><span class="p">(</span><span class="n">statement</span><span class="p">,</span> <span class="nb">dict</span><span class="p">())</span></tt>
             </div>
             <div id="l305"
                class="code sev- "><tt><i>305</i> &nbsp;</tt>
@@ -1682,76 +938,16 @@
                class="code sev- "><tt><i>307</i>         <span class="n">statement</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span></tt>
             </div>
             <div id="l308"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W191
-                     </span>
-                     Indentation contains tabs</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        E101
-                     </span>
-                     Indentation contains mixed spaces and tabs</li>
-               
-               </ul><tt><i>308</i> <span class="s1">   	        select p.Pillar,a.`SA Upload`,c.`MKT Upload`,b.`PDMR Generate`,d.`Submit` from</span></tt>
+               class="code sev- "><tt><i>308</i> <span class="s1">   	        select p.Pillar,a.`SA Upload`,c.`MKT Upload`,b.`PDMR Generate`,d.`Submit` from</span></tt>
             </div>
             <div id="l309"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W191
-                     </span>
-                     Indentation contains tabs</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        E101
-                     </span>
-                     Indentation contains mixed spaces and tabs</li>
-               
-               </ul><tt><i>309</i> <span class="s1">   				(select distinct ka_name as pillar  from wz_pdmr_mapping wpm where `type` = 1) p</span></tt>
+               class="code sev- "><tt><i>309</i> <span class="s1">   				(select distinct ka_name as pillar  from wz_pdmr_mapping wpm where `type` = 1) p</span></tt>
             </div>
             <div id="l310"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W191
-                     </span>
-                     Indentation contains tabs</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        E101
-                     </span>
-                     Indentation contains mixed spaces and tabs</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>310</i> <span class="s1">   							  left join 	(   	</span></tt>
+               class="code sev- "><tt><i>310</i> <span class="s1">   							  left join 	(   	</span></tt>
             </div>
             <div id="l311"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>311</i> <span class="s1">                select ka as  Pillar  ,max(create_dt) as &#39;SA Upload&#39; from user_action_log   </span></tt>
+               class="code sev- "><tt><i>311</i> <span class="s1">                select ka as  Pillar  ,max(create_dt) as &#39;SA Upload&#39; from user_action_log   </span></tt>
             </div>
             <div id="l312"
                class="code sev- "><tt><i>312</i> <span class="s1">                              where  action = &#39;SA Upload&#39;   group by ka )a</span></tt>
@@ -1763,55 +959,19 @@
                class="code sev- "><tt><i>314</i> <span class="s1">                              left join (</span></tt>
             </div>
             <div id="l315"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>315</i> <span class="s1">                select ka as  Pillar  ,max(create_dt) as &#39;PDMR Generate&#39; from user_action_log   </span></tt>
+               class="code sev- "><tt><i>315</i> <span class="s1">                select ka as  Pillar  ,max(create_dt) as &#39;PDMR Generate&#39; from user_action_log   </span></tt>
             </div>
             <div id="l316"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>316</i> <span class="s1">                              where  action = &#39;PDMR Generate&#39;  group by ka)b        </span></tt>
+               class="code sev- "><tt><i>316</i> <span class="s1">                              where  action = &#39;PDMR Generate&#39;  group by ka)b        </span></tt>
             </div>
             <div id="l317"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>317</i> <span class="s1">                              on p.pillar = b.pillar </span></tt>
+               class="code sev- "><tt><i>317</i> <span class="s1">                              on p.pillar = b.pillar </span></tt>
             </div>
             <div id="l318"
                class="code sev- "><tt><i>318</i> <span class="s1">                              left join (</span></tt>
             </div>
             <div id="l319"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>319</i> <span class="s1">                select ka as  Pillar  ,max(create_dt) as &#39;MKT Upload&#39; from user_action_log   </span></tt>
+               class="code sev- "><tt><i>319</i> <span class="s1">                select ka as  Pillar  ,max(create_dt) as &#39;MKT Upload&#39; from user_action_log   </span></tt>
             </div>
             <div id="l320"
                class="code sev- "><tt><i>320</i> <span class="s1">                              where   action = &#39;MKT Upload&#39;     group by ka)c</span></tt>
@@ -1823,31 +983,13 @@
                class="code sev- "><tt><i>322</i> <span class="s1">                              left join (</span></tt>
             </div>
             <div id="l323"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>323</i> <span class="s1">                 select ka as  Pillar  ,max(create_dt) as &#39;Submit&#39; from user_action_log   </span></tt>
+               class="code sev- "><tt><i>323</i> <span class="s1">                 select ka as  Pillar  ,max(create_dt) as &#39;Submit&#39; from user_action_log   </span></tt>
             </div>
             <div id="l324"
                class="code sev- "><tt><i>324</i> <span class="s1">                              where  `action` = &#39;submit&#39; group by ka)d</span></tt>
             </div>
             <div id="l325"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>325</i> <span class="s1">                              on p.pillar = d.pillar </span></tt>
+               class="code sev- "><tt><i>325</i> <span class="s1">                              on p.pillar = d.pillar </span></tt>
             </div>
             <div id="l326"
                class="code sev- "><tt><i>326</i> <span class="s1">        &#39;&#39;&#39;</span></tt>
@@ -1856,31 +998,13 @@
                class="code sev- "><tt><i>327</i> &nbsp;</tt>
             </div>
             <div id="l328"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E231
-                     </span>
-                     Missing whitespace after ','</li>
-               
-               </ul><tt><i>328</i>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">list</span><span class="p">(</span><span class="n">statement</span><span class="p">,</span><span class="nb">dict</span><span class="p">())</span></tt>
+               class="code sev- "><tt><i>328</i>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">list</span><span class="p">(</span><span class="n">statement</span><span class="p">,</span><span class="nb">dict</span><span class="p">())</span></tt>
             </div>
             <div id="l329"
                class="code sev- "><tt><i>329</i> &nbsp;</tt>
             </div>
             <div id="l330"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E231
-                     </span>
-                     Missing whitespace after ','</li>
-               
-               </ul><tt><i>330</i>     <span class="k">def</span> <span class="nf">get_running_status</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">pillar</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>330</i>     <span class="k">def</span> <span class="nf">get_running_status</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">pillar</span><span class="p">):</span></tt>
             </div>
             <div id="l331"
                class="code sev- "><tt><i>331</i>         <span class="n">params</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span></tt>
@@ -1892,46 +1016,19 @@
                class="code sev- "><tt><i>333</i>         <span class="n">statement</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span></tt>
             </div>
             <div id="l334"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>334</i> <span class="s1">        select *  from pdmr_running_log where pillar = :pillar  and status = &#39;running&#39;     </span></tt>
+               class="code sev- "><tt><i>334</i> <span class="s1">        select *  from pdmr_running_log where pillar = :pillar  and status = &#39;running&#39;     </span></tt>
             </div>
             <div id="l335"
                class="code sev- "><tt><i>335</i> <span class="s1">        &#39;&#39;&#39;</span></tt>
             </div>
             <div id="l336"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E231
-                     </span>
-                     Missing whitespace after ','</li>
-               
-               </ul><tt><i>336</i>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">list</span><span class="p">(</span><span class="n">statement</span><span class="p">,</span><span class="n">params</span><span class="p">)</span></tt>
+               class="code sev- "><tt><i>336</i>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">list</span><span class="p">(</span><span class="n">statement</span><span class="p">,</span><span class="n">params</span><span class="p">)</span></tt>
             </div>
             <div id="l337"
                class="code sev- "><tt><i>337</i> &nbsp;</tt>
             </div>
             <div id="l338"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E231
-                     </span>
-                     Missing whitespace after ',' (in 3 places)</li>
-               
-               </ul><tt><i>338</i>     <span class="k">def</span> <span class="nf">genert_running_status</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">pillar</span><span class="p">,</span><span class="n">uid</span><span class="p">,</span><span class="n">current_p</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>338</i>     <span class="k">def</span> <span class="nf">genert_running_status</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">pillar</span><span class="p">,</span><span class="n">uid</span><span class="p">,</span><span class="n">current_p</span><span class="p">):</span></tt>
             </div>
             <div id="l339"
                class="code sev- "><tt><i>339</i>         <span class="n">params</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span></tt>
@@ -1958,34 +1055,10 @@
                class="code sev- "><tt><i>346</i> &nbsp;</tt>
             </div>
             <div id="l347"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E231
-                     </span>
-                     Missing whitespace after ','</li>
-               
-               </ul><tt><i>347</i>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">insert_or_update</span><span class="p">(</span><span class="n">statement</span><span class="p">,</span><span class="n">params</span><span class="p">)</span></tt>
+               class="code sev- "><tt><i>347</i>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">insert_or_update</span><span class="p">(</span><span class="n">statement</span><span class="p">,</span><span class="n">params</span><span class="p">)</span></tt>
             </div>
             <div id="l348"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E301
-                     </span>
-                     Expected 1 blank line, found 0</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        E231
-                     </span>
-                     Missing whitespace after ',' (in 5 places)</li>
-               
-               </ul><tt><i>348</i>     <span class="k">def</span> <span class="nf">update_running_status</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">pillar</span><span class="p">,</span><span class="n">current_p</span><span class="p">,</span><span class="n">uid</span><span class="p">,</span><span class="n">status</span><span class="p">,</span><span class="n">status_code</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>348</i>     <span class="k">def</span> <span class="nf">update_running_status</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">pillar</span><span class="p">,</span><span class="n">current_p</span><span class="p">,</span><span class="n">uid</span><span class="p">,</span><span class="n">status</span><span class="p">,</span><span class="n">status_code</span><span class="p">):</span></tt>
             </div>
             <div id="l349"
                class="code sev- "><tt><i>349</i>         <span class="n">params</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span></tt>
@@ -2009,16 +1082,7 @@
                class="code sev- "><tt><i>355</i>         <span class="n">statement</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span></tt>
             </div>
             <div id="l356"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E501
-                     </span>
-                     Line too long (174 > 120 characters)</li>
-               
-               </ul><tt><i>356</i> <span class="s1">        update pdmr_running_log set status = :status , status_code = :st_code where status = &#39;running&#39; and uid = :uid and pillar = :pillar and static_period = :static_period;</span></tt>
+               class="code sev- "><tt><i>356</i> <span class="s1">        update pdmr_running_log set status = :status , status_code = :st_code where status = &#39;running&#39; and uid = :uid and pillar = :pillar and static_period = :static_period;</span></tt>
             </div>
             <div id="l357"
                class="code sev- "><tt><i>357</i> <span class="s1">        &#39;&#39;&#39;</span></tt>
@@ -2027,16 +1091,7 @@
                class="code sev- "><tt><i>358</i> &nbsp;</tt>
             </div>
             <div id="l359"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E231
-                     </span>
-                     Missing whitespace after ','</li>
-               
-               </ul><tt><i>359</i>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">insert_or_update</span><span class="p">(</span><span class="n">statement</span><span class="p">,</span><span class="n">params</span><span class="p">)</span></tt>
+               class="code sev- "><tt><i>359</i>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">insert_or_update</span><span class="p">(</span><span class="n">statement</span><span class="p">,</span><span class="n">params</span><span class="p">)</span></tt>
             </div>
             <div id="l360"
                class="code sev- "><tt><i>360</i> &nbsp;</tt>
@@ -2063,16 +1118,7 @@
                class="code sev- "><tt><i>367</i>         <span class="n">first_sql</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span></tt>
             </div>
             <div id="l368"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>368</i> <span class="s2">                delete from iz_pdmr_adjusted_target </span></tt>
+               class="code sev- "><tt><i>368</i> <span class="s2">                delete from iz_pdmr_adjusted_target </span></tt>
             </div>
             <div id="l369"
                class="code sev- "><tt><i>369</i> <span class="s2">                where Pillar = :Pillar and customer = :customer and statics_period = :statics_period;</span></tt>
@@ -2165,88 +1211,25 @@
                class="code sev- "><tt><i>398</i>         <span class="n">statement</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span></tt>
             </div>
             <div id="l399"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>399</i> <span class="s1">                SELECT </span></tt>
+               class="code sev- "><tt><i>399</i> <span class="s1">                SELECT </span></tt>
             </div>
             <div id="l400"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>400</i> <span class="s1">                    t1.pillar, </span></tt>
+               class="code sev- "><tt><i>400</i> <span class="s1">                    t1.pillar, </span></tt>
             </div>
             <div id="l401"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>401</i> <span class="s1">                    t1.p_year , </span></tt>
+               class="code sev- "><tt><i>401</i> <span class="s1">                    t1.p_year , </span></tt>
             </div>
             <div id="l402"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>402</i> <span class="s1">                    t1.p_period , </span></tt>
+               class="code sev- "><tt><i>402</i> <span class="s1">                    t1.p_period , </span></tt>
             </div>
             <div id="l403"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>403</i> <span class="s1">                    t1.insert_time, </span></tt>
+               class="code sev- "><tt><i>403</i> <span class="s1">                    t1.insert_time, </span></tt>
             </div>
             <div id="l404"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>404</i> <span class="s1">                    t1.p_file  </span></tt>
+               class="code sev- "><tt><i>404</i> <span class="s1">                    t1.p_file  </span></tt>
             </div>
             <div id="l405"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>405</i> <span class="s1">                FROM </span></tt>
+               class="code sev- "><tt><i>405</i> <span class="s1">                FROM </span></tt>
             </div>
             <div id="l406"
                class="code sev- "><tt><i>406</i> <span class="s1">                    pdmr_genery_file t1</span></tt>
@@ -2255,85 +1238,31 @@
                class="code sev- "><tt><i>407</i> <span class="s1">                INNER JOIN (</span></tt>
             </div>
             <div id="l408"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>408</i> <span class="s1">                    SELECT </span></tt>
+               class="code sev- "><tt><i>408</i> <span class="s1">                    SELECT </span></tt>
             </div>
             <div id="l409"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>409</i> <span class="s1">                        pillar , </span></tt>
+               class="code sev- "><tt><i>409</i> <span class="s1">                        pillar , </span></tt>
             </div>
             <div id="l410"
                class="code sev- "><tt><i>410</i> <span class="s1">                        MAX(insert_time) AS insert_time</span></tt>
             </div>
             <div id="l411"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>411</i> <span class="s1">                    FROM </span></tt>
+               class="code sev- "><tt><i>411</i> <span class="s1">                    FROM </span></tt>
             </div>
             <div id="l412"
                class="code sev- "><tt><i>412</i> <span class="s1">                        pdmr_genery_file</span></tt>
             </div>
             <div id="l413"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>413</i> <span class="s1">                    GROUP BY </span></tt>
+               class="code sev- "><tt><i>413</i> <span class="s1">                    GROUP BY </span></tt>
             </div>
             <div id="l414"
                class="code sev- "><tt><i>414</i> <span class="s1">                        pillar</span></tt>
             </div>
             <div id="l415"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>415</i> <span class="s1">                ) t2 </span></tt>
+               class="code sev- "><tt><i>415</i> <span class="s1">                ) t2 </span></tt>
             </div>
             <div id="l416"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>416</i> <span class="s1">                ON </span></tt>
+               class="code sev- "><tt><i>416</i> <span class="s1">                ON </span></tt>
             </div>
             <div id="l417"
                class="code sev- "><tt><i>417</i> <span class="s1">                    t1.pillar = t2.pillar AND t1.insert_time = t2.insert_time;</span></tt>
@@ -2375,226 +1304,46 @@
                class="code sev- "><tt><i>429</i>         <span class="c1"># statement = &#39;&#39;&#39;</span></tt>
             </div>
             <div id="l430"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E501
-                     </span>
-                     Line too long (131 > 120 characters)</li>
-               
-               </ul><tt><i>430</i>         <span class="c1"># select ka,&#39;PDMR Generate：Completed&#39; as message,create_dt  as `date` from user_action_log where `action` = &#39;PDMR Generate&#39;</span></tt>
+               class="code sev- "><tt><i>430</i>         <span class="c1"># select ka,&#39;PDMR Generate：Completed&#39; as message,create_dt  as `date` from user_action_log where `action` = &#39;PDMR Generate&#39;</span></tt>
             </div>
             <div id="l431"
                class="code sev- "><tt><i>431</i>         <span class="c1"># &#39;&#39;&#39;</span></tt>
             </div>
             <div id="l432"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E222
-                     </span>
-                     Multiple spaces after operator</li>
-               
-               </ul><tt><i>432</i>         <span class="n">statement</span> <span class="o">=</span>    <span class="s1">&#39;&#39;&#39;</span></tt>
+               class="code sev- "><tt><i>432</i>         <span class="n">statement</span> <span class="o">=</span>    <span class="s1">&#39;&#39;&#39;</span></tt>
             </div>
             <div id="l433"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W293
-                     </span>
-                     Blank line contains whitespace</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        W191
-                     </span>
-                     Indentation contains tabs</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        E101
-                     </span>
-                     Indentation contains mixed spaces and tabs</li>
-               
-               </ul><tt><i>433</i> <span class="s1">             		     </span></tt>
+               class="code sev- "><tt><i>433</i> <span class="s1">             		     </span></tt>
             </div>
             <div id="l434"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W191
-                     </span>
-                     Indentation contains tabs</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        E101
-                     </span>
-                     Indentation contains mixed spaces and tabs</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>434</i> <span class="s1">		     select </span></tt>
+               class="code sev- "><tt><i>434</i> <span class="s1">		     select </span></tt>
             </div>
             <div id="l435"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W191
-                     </span>
-                     Indentation contains tabs</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        E101
-                     </span>
-                     Indentation contains mixed spaces and tabs</li>
-               
-               </ul><tt><i>435</i> <span class="s1">		     t1.ka,&#39;submit&#39; as message,</span></tt>
+               class="code sev- "><tt><i>435</i> <span class="s1">		     t1.ka,&#39;submit&#39; as message,</span></tt>
             </div>
             <div id="l436"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W191
-                     </span>
-                     Indentation contains tabs</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        E101
-                     </span>
-                     Indentation contains mixed spaces and tabs</li>
-               
-               </ul><tt><i>436</i> <span class="s1">		     t1.create_dt  as `date`,</span></tt>
+               class="code sev- "><tt><i>436</i> <span class="s1">		     t1.create_dt  as `date`,</span></tt>
             </div>
             <div id="l437"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W191
-                     </span>
-                     Indentation contains tabs</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        E101
-                     </span>
-                     Indentation contains mixed spaces and tabs</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>437</i> <span class="s1">		     uid </span></tt>
+               class="code sev- "><tt><i>437</i> <span class="s1">		     uid </span></tt>
             </div>
             <div id="l438"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W191
-                     </span>
-                     Indentation contains tabs</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        E101
-                     </span>
-                     Indentation contains mixed spaces and tabs</li>
-               
-               </ul><tt><i>438</i> <span class="s1">		     from user_action_log t1</span></tt>
+               class="code sev- "><tt><i>438</i> <span class="s1">		     from user_action_log t1</span></tt>
             </div>
             <div id="l439"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W191
-                     </span>
-                     Indentation contains tabs</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        E101
-                     </span>
-                     Indentation contains mixed spaces and tabs</li>
-               
-               </ul><tt><i>439</i> <span class="s1">		     inner join (</span></tt>
+               class="code sev- "><tt><i>439</i> <span class="s1">		     inner join (</span></tt>
             </div>
             <div id="l440"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W191
-                     </span>
-                     Indentation contains tabs</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        E101
-                     </span>
-                     Indentation contains mixed spaces and tabs</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>440</i> <span class="s1">		        SELECT </span></tt>
+               class="code sev- "><tt><i>440</i> <span class="s1">		        SELECT </span></tt>
             </div>
             <div id="l441"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>441</i> <span class="s1">                        ka , </span></tt>
+               class="code sev- "><tt><i>441</i> <span class="s1">                        ka , </span></tt>
             </div>
             <div id="l442"
                class="code sev- "><tt><i>442</i> <span class="s1">                        MAX(create_dt) AS create_dt</span></tt>
             </div>
             <div id="l443"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>443</i> <span class="s1">                    FROM </span></tt>
+               class="code sev- "><tt><i>443</i> <span class="s1">                    FROM </span></tt>
             </div>
             <div id="l444"
                class="code sev- "><tt><i>444</i> <span class="s1">                        user_action_log</span></tt>
@@ -2603,106 +1352,25 @@
                class="code sev- "><tt><i>445</i> <span class="s1">                        where `action` = &#39;submit&#39; and module = &#39;Pdmr&#39;</span></tt>
             </div>
             <div id="l446"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>446</i> <span class="s1">                    GROUP BY </span></tt>
+               class="code sev- "><tt><i>446</i> <span class="s1">                    GROUP BY </span></tt>
             </div>
             <div id="l447"
                class="code sev- "><tt><i>447</i> <span class="s1">                        ka</span></tt>
             </div>
             <div id="l448"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W191
-                     </span>
-                     Indentation contains tabs</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        E101
-                     </span>
-                     Indentation contains mixed spaces and tabs</li>
-               
-               </ul><tt><i>448</i> <span class="s1">		     ) t2</span></tt>
+               class="code sev- "><tt><i>448</i> <span class="s1">		     ) t2</span></tt>
             </div>
             <div id="l449"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W191
-                     </span>
-                     Indentation contains tabs</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        E101
-                     </span>
-                     Indentation contains mixed spaces and tabs</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-               </ul><tt><i>449</i> <span class="s1">		     ON </span></tt>
+               class="code sev- "><tt><i>449</i> <span class="s1">		     ON </span></tt>
             </div>
             <div id="l450"
                class="code sev- "><tt><i>450</i> <span class="s1">                    t1.ka = t2.ka AND t1.create_dt = t2.create_dt</span></tt>
             </div>
             <div id="l451"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W191
-                     </span>
-                     Indentation contains tabs</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        E101
-                     </span>
-                     Indentation contains mixed spaces and tabs</li>
-               
-               </ul><tt><i>451</i> <span class="s1">		     where t1.`action` = &#39;submit&#39; and module = &#39;Pdmr&#39;</span></tt>
+               class="code sev- "><tt><i>451</i> <span class="s1">		     where t1.`action` = &#39;submit&#39; and module = &#39;Pdmr&#39;</span></tt>
             </div>
             <div id="l452"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W191
-                     </span>
-                     Indentation contains tabs</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        E101
-                     </span>
-                     Indentation contains mixed spaces and tabs</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        W293
-                     </span>
-                     Blank line contains whitespace</li>
-               
-               </ul><tt><i>452</i> <span class="s1">		     </span></tt>
+               class="code sev- "><tt><i>452</i> <span class="s1">		     </span></tt>
             </div>
             <div id="l453"
                class="code sev- "><tt><i>453</i> <span class="s1">        &#39;&#39;&#39;</span></tt>
@@ -2744,16 +1412,7 @@
                class="code sev- "><tt><i>465</i> &nbsp;</tt>
             </div>
             <div id="l466"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E303
-                     </span>
-                     Too many blank lines (2)</li>
-               
-               </ul><tt><i>466</i>     <span class="k">def</span> <span class="nf">get_input_flag</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>466</i>     <span class="k">def</span> <span class="nf">get_input_flag</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
             </div>
             <div id="l467"
                class="code sev- "><tt><i>467</i>         <span class="n">params</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span></tt>
@@ -2765,16 +1424,7 @@
                class="code sev- "><tt><i>469</i>         <span class="n">statement</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span></tt>
             </div>
             <div id="l470"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        W293
-                     </span>
-                     Blank line contains whitespace</li>
-               
-               </ul><tt><i>470</i> <span class="s1">           </span></tt>
+               class="code sev- "><tt><i>470</i> <span class="s1">           </span></tt>
             </div>
             <div id="l471"
                class="code sev- "><tt><i>471</i> <span class="s1">                        select   current_period   from pdmr_input_ctl  order by insert_dt desc limit 1;</span></tt>
@@ -2786,16 +1436,7 @@
                class="code sev- "><tt><i>473</i> &nbsp;</tt>
             </div>
             <div id="l474"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E222
-                     </span>
-                     Multiple spaces after operator</li>
-               
-               </ul><tt><i>474</i>         <span class="n">data</span> <span class="o">=</span>  <span class="bp">self</span><span class="o">.</span><span class="n">list</span><span class="p">(</span><span class="n">statement</span><span class="p">,</span> <span class="n">params</span><span class="p">)</span></tt>
+               class="code sev- "><tt><i>474</i>         <span class="n">data</span> <span class="o">=</span>  <span class="bp">self</span><span class="o">.</span><span class="n">list</span><span class="p">(</span><span class="n">statement</span><span class="p">,</span> <span class="n">params</span><span class="p">)</span></tt>
             </div>
             <div id="l475"
                class="code sev- "><tt><i>475</i>         <span class="n">A_P</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;current_period&#39;</span><span class="p">]</span></tt>
@@ -2807,16 +1448,7 @@
                class="code sev- "><tt><i>477</i>         <span class="k">return</span> <span class="n">A_P</span> <span class="o">==</span> <span class="n">B_P</span></tt>
             </div>
             <div id="l478"
-               class="code sev-2  le">
-               <ul class="violations">
-               
-                  <li>
-                     <span class="count sev-2">
-                        E265
-                     </span>
-                     Block comment should start with '# '</li>
-               
-               </ul><tt><i>478</i>         <span class="c1">#TODO</span></tt>
+               class="code sev- "><tt><i>478</i>         <span class="c1">#TODO</span></tt>
             </div>
             <div id="l479"
                class="code sev- "><tt><i>479</i>         <span class="c1"># return True</span></tt>
@@ -2860,23 +1492,11 @@
                
                   <li>
                      <span class="count sev-1">
-                        F821
+                        E999
                      </span>
-                     Undefined name 'ab'</li>
+                     SyntaxError: invalid syntax</li>
                
-                  <li>
-                     <span class="count sev-2">
-                        W291
-                     </span>
-                     Trailing whitespace</li>
-               
-                  <li>
-                     <span class="count sev-2">
-                        W292
-                     </span>
-                     No newline at end of file</li>
-               
-               </ul><tt><i>491</i>     <span class="n">ab</span> </tt>
+               </ul><tt><i>491</i>     <span class="n">ab</span> <span class="n">c</span></tt>
             </div>
             
          </div>
