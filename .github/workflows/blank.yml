@@ -66,7 +66,7 @@ jobs:
         uses: dawidd6/action-send-mail@v3
         with:
           smtp-server: smtp.exmail.qq.com
-          smtp-port: 587
+          smtp-port: 465
           smtp-username: ${{ secrets.SMTP_USER }}
           smtp-password: ${{ secrets.SMTP_PASSWORD }}
           from: ${{ secrets.SMTP_USER }}
