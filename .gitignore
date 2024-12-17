@@ -1,0 +1,5 @@
+.venv/*
+*flake8*
+flake8_report/*
+testgitpull/.DS_Store
+.DS_Store
