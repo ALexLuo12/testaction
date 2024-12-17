@@ -67,6 +67,7 @@ jobs:
         with:
           smtp-server: smtp.exmail.qq.com
           smtp-port: 465
+          server_port: 465
           smtp-username: ${{ secrets.SMTP_USER }}
           smtp-password: ${{ secrets.SMTP_PASSWORD }}
           from: ${{ secrets.SMTP_USER }}
