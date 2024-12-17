@@ -51,6 +51,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          echo "${{ secrets.SMTP_USER }}"
+          echo " ${{ secrets.SMTP_PASSWORD }}"
 
       # Step 6: Commit and push the Flake8 report to gh-pages branch
       - name: Push Flake8 report to gh-pages
