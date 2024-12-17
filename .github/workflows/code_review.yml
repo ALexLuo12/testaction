@@ -23,7 +23,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v3
         with:
-          python-version: '3.8'  # 选择合适的 Python 版本
+          python-version: '3.7'  # 选择合适的 Python 版本
 
       # Step 3: Install flake8 and dependencies
       - name: Install dependencies
@@ -48,6 +48,7 @@ jobs:
             exit 0
           fi
           flake8 $FILES --format=html --htmldir=flake8_reports
+          echo "yes"
 
       # Step 6: Commit and push the Flake8 report to gh-pages branch
       - name: Push Flake8 report to gh-pages
