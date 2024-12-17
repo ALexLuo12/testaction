@@ -42,7 +42,7 @@ jobs:
       # Step 5: Run flake8 only on the updated files
       - name: Run Flake8 on updated files
         run: |
-          flake8 $FILES --format=html --htmldir=flake8_reports --exit-zero
+          flake8 $FILES  --select=E,W,F,C --max-line-length=120 --format=html --htmldir=flake8_reports --exit-zero
           echo "yes"
           echo "Flake8 report generated."
 
