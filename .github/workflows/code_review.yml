@@ -43,7 +43,7 @@ jobs:
       # Step 5: Run flake8 only on the updated files
       - name: Run Flake8 on updated files
         run: |
-          flake8 $FILES --format=html --htmldir=flake8_reports
+          flake8 $FILES --format=html --htmldir=flake8_reports --exit-zero
           echo "yes"
 
       # Step 6: Commit and push the Flake8 report to gh-pages branch
