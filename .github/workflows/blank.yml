@@ -62,7 +62,17 @@ jobs:
           destination_dir: flake8_reports/${{ github.ref_name }}
           keep_files: true
 
-
+      - name: Send Email
+        uses: dawidd6/action-send-mail@v3
+        with:
+          smtp-server: smtp.exmail.qq.com
+          smtp-port: 587
+          smtp-username: ${{ secrets.SMTP_USER }}
+          smtp-password: ${{ secrets.SMTP_PASSWORD }}
+          to: alex.luo@merkle.com
+          subject: GitHub Action Notification
+          body: |
+            查看此次代码分析结果，如果没有刷新请等待几分钟 https://alexluo12.github.io/testaction/flake8_reports/${{ github.ref_name }}
       # #推送生成的文件到指定仓库
       # - name: Push files to target repository
       #   env:
