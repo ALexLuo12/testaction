@@ -2,7 +2,7 @@ name: Flake8 Analysis and Push Report
 
 on:
   push:
-    branches-ignore::
+    branches-ignore:
       - main  # 或你希望触发分析的分支
 
 jobs:
