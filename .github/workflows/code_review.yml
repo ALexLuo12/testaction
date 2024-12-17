@@ -11,6 +11,8 @@ on:
 jobs:
   flake8-analysis:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       # Step 1: Checkout the code
@@ -45,6 +47,13 @@ jobs:
         run: |
           flake8 $FILES --format=html --htmldir=flake8_reports --exit-zero
           echo "yes"
+          echo "Flake8 report generated."
+
+      #  配置 Git 用户信息
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
       # Step 6: Commit and push the Flake8 report to gh-pages branch
       - name: Push Flake8 report to gh-pages
@@ -52,4 +61,20 @@ jobs:
         with:
           personal_token: ${{ secrets.GITHUB_TOKEN }}  # 使用 GitHub 自动生成的 token
           publish_dir: ./flake8_reports  # 要推送的报告目录
-          publish_branch: main  # 推送到 gh-pages 分支
+          publish_branch: gh-pages  # 推送到 gh-pages 分支
+
+
+      # #推送生成的文件到指定仓库
+      # - name: Push files to target repository
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   run: |
+      #     # 添加生成的文件
+      #     git add flake8_reports
+          
+      #     # 提交更改（避免空提交报错）
+      #     git commit -m "Add flake8 analysis report [skip ci]" || echo "No changes to commit"
+
+      #     # 推送到指定仓库（例如 `target-repo`）
+      #     git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+      #     git push origin HEAD:main
