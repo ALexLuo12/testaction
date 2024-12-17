@@ -34,7 +34,7 @@ jobs:
         id: get_files
         run: |
           echo "Updated files:"
-          FILES=$(git diff --name-only ${{ github.sha }}^ ${{ github.sha }} | grep -E '\.py$')
+          FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep -E '\.py$')
           echo "FILES=$FILES" >> $GITHUB_ENV
           echo "$FILES"
 
