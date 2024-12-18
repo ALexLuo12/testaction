@@ -36,8 +36,8 @@ jobs:
         run: |
           echo "Updated files:"
           FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep -E '\.py$')
-          echo "FILES=$FILES" >> $GITHUB_ENV
-          echo "$FILES"
+         
+          
 
       # Step 5: Run flake8 only on the updated files
       - name: Run Flake8 on updated files
